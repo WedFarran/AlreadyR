@@ -7,7 +7,7 @@ import '../widgets/custom_app_bar.dart';
 import '../widgets/direction_widget.dart';
 import '../widgets/timer_widget.dart';
 
-class MyOrder extends StatelessWidget {
+class MyOrderScreen extends StatelessWidget {
   static const String id = 'timerr_screen';
 
   @override

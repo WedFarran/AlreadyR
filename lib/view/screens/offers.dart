@@ -5,7 +5,7 @@ import '../../controller/provider/offers_provider.dart';
 import '../widgets/custom_app_bar.dart';
 import '../widgets/offers_widget.dart';
 
-class Offers extends StatelessWidget {
+class OffersScreen extends StatelessWidget {
   static const String id = 'offer_screen';
   @override
   Widget build(BuildContext context) {

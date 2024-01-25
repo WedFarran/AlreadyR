@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:alreadyr/constants/layout_constant.dart';
 import 'package:alreadyr/constants/strings.dart';
-import 'package:alreadyr/view/screens/loadingdata.dart';
+import 'package:alreadyr/view/widgets/navigation_bar_widget.dart';
 import 'package:flutter/material.dart';
 import '../../constants/colors.dart';
 
@@ -25,7 +25,7 @@ class _WellcomeState extends State<Wellcome> {
           : user.email!.contains('@wl.a.com')
               ? Navigator.of(context).pushNamed(AdminWasteNavigationBar.id)
               : Navigator.of(context).pushNamed(DriverWasteNavigationBar.id);*/
-      Navigator.of(context).pushNamed(LoadingScreen.id);
+      Navigator.of(context).pushNamed(NavigationBarWidget.id);
     });
     super.initState();
   }

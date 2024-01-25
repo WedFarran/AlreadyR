@@ -2,7 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 
-import '../../view/screens/loadingdata.dart';
+import '../../view/widgets/navigation_bar_widget.dart';
 
 class AuthenticationService {
   final storage = const FlutterSecureStorage();
@@ -64,7 +64,7 @@ class AuthenticationService {
       Navigator.pushAndRemoveUntil(
           context,
           // ignore: non_constant_identifier_names
-          MaterialPageRoute(builder: (Builder) => LoadingScreen()),
+          MaterialPageRoute(builder: (Builder) => NavigationBarWidget()),
           (route) => false);
 
       showSnackBar(context, 'logged in');

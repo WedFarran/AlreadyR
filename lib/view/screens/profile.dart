@@ -5,12 +5,12 @@ import '../widgets/custom_app_bar.dart';
 import 'account.dart';
 import 'auth_number.dart';
 import 'lang.dart';
-import 'loadingdata.dart';
+import '../widgets/navigation_bar_widget.dart';
 import 'order_history.dart';
 import 'points.dart';
 import 'support.dart';
 
-class Profile extends StatelessWidget {
+class ProfileScreen extends StatelessWidget {
   static const String id = 'profile_screen';
   @override
   Widget build(BuildContext context) {
@@ -73,7 +73,8 @@ class Profile extends StatelessWidget {
                           TextButton(
                               onPressed: () {
                                 FirebaseAuth.instance.signOut();
-                                Navigator.pushNamed(context, LoadingScreen.id);
+                                Navigator.pushNamed(
+                                    context, NavigationBarWidget.id);
                               },
                               child: Text("")
                               //AppLocale.of(BuildContext, context)

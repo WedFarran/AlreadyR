@@ -5,7 +5,7 @@ import 'package:alreadyr/controller/provider/user_provider.dart';
 import 'package:alreadyr/view/screens/cart.dart';
 import 'package:alreadyr/view/screens/home.dart';
 import 'package:alreadyr/view/screens/lang.dart';
-import 'package:alreadyr/view/screens/loadingdata.dart';
+import 'package:alreadyr/view/widgets/navigation_bar_widget.dart';
 import 'package:alreadyr/view/screens/my_order.dart';
 import 'package:alreadyr/view/screens/offers.dart';
 import 'package:alreadyr/view/screens/order_history.dart';
@@ -26,12 +26,12 @@ import '../view/screens/auth_number.dart';
 import '../view/screens/profile.dart';
 
 Map<String, Widget Function(BuildContext)> aleadyRoutes = {
-  Home.id: (context) => Home(),
-  MyOrder.id: (context) => MyOrder(),
-  Profile.id: (context) => Profile(),
+  HomeScreen.id: (context) => HomeScreen(),
+  MyOrderScreen.id: (context) => MyOrderScreen(),
+  ProfileScreen.id: (context) => ProfileScreen(),
   //  Map.id: (context) => Map(),
-  Offers.id: (context) => Offers(),
-  LoadingScreen.id: (context) => LoadingScreen(),
+  OffersScreen.id: (context) => OffersScreen(),
+  NavigationBarWidget.id: (context) => NavigationBarWidget(),
   Resturants.id: (context) => Resturants(),
   ResturantMenu.id: (context) => ResturantMenu(),
   Cart.id: (context) => Cart(),

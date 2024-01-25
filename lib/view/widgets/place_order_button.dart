@@ -7,7 +7,7 @@ import '../../constants/layout_constant.dart';
 import '../../controller/provider/cart_provider.dart';
 import '../../controller/provider/order_provider.dart';
 import '../screens/auth_number.dart';
-import '../screens/loadingdata.dart';
+import 'navigation_bar_widget.dart';
 
 class PlaceOrderButton extends StatefulWidget {
   const PlaceOrderButton({
@@ -40,7 +40,7 @@ class _PlaceOrderButtonState extends State<PlaceOrderButton> {
                     setState(() {
                       _isLoading = true;
                     });
-                    Navigator.pushNamed(context, LoadingScreen.id,
+                    Navigator.pushNamed(context, NavigationBarWidget.id,
                         arguments: 2);
                     await Provider.of<OrdersProvider>(context, listen: false)
                         .addOrder(

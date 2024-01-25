@@ -4,7 +4,7 @@ import '../../model/resturantsearch.dart';
 import '../widgets/catigory_items.dart';
 import '../widgets/custom_app_bar.dart';
 
-class Home extends StatelessWidget {
+class HomeScreen extends StatelessWidget {
   static const String id = 'home_screen';
 
   @override

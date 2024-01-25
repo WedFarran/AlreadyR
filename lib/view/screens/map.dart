@@ -8,14 +8,16 @@ import '../../constants/layout_constant.dart';
 import '../../controller/provider/resturant_list_provider.dart';
 import '../widgets/custom_app_bar.dart';
 
-class Map extends StatefulWidget {
+class MapScreen extends StatefulWidget {
   static const String id = 'map_screen';
 
+  const MapScreen({super.key});
+
   @override
-  _MapState createState() => _MapState();
+  _MapScreenState createState() => _MapScreenState();
 }
 
-class _MapState extends State<Map> {
+class _MapScreenState extends State<MapScreen> {
   late GoogleMapController _mapController;
   late String _searchAddres;
   Set<Marker> _markers = {};
