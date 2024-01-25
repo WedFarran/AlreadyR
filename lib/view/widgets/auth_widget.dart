@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../constants/colors.dart';
 import '../../constants/layout_constant.dart';
 
 class AuthWidget extends StatelessWidget {

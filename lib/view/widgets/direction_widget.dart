@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import '../../constants/colors.dart';
 import '../../constants/layout_constant.dart';
 
 class DirectionWidget extends StatefulWidget {

@@ -1,6 +1,7 @@
 import 'package:alreadyr/view/screens/home.dart';
 import 'package:flutter/material.dart';
 import 'package:convex_bottom_bar/convex_bottom_bar.dart';
+import '../../constants/colors.dart';
 import '../../constants/layout_constant.dart';
 import 'offers.dart';
 import 'profile.dart';
@@ -42,7 +43,7 @@ class _LoadingScreen extends State<LoadingScreen> {
     return Scaffold(
       bottomNavigationBar: ConvexAppBar(
         backgroundColor: white,
-        activeColor: red,
+        activeColor: primaryColor,
         color: Colors.blue,
         items: [
           TabItem(

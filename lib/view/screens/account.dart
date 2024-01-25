@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../constants/colors.dart';
 import '../../constants/layout_constant.dart';
 import '../../controller/provider/user_provider.dart';
 import '../widgets/custom_app_bar.dart';
@@ -56,7 +57,7 @@ class Account extends StatelessWidget {
             padding: const EdgeInsets.only(left: 20.0, right: 20.0),
             child: TextButton(
               style: TextButton.styleFrom(
-                  backgroundColor: red,
+                  backgroundColor: primaryColor,
                   primary: Colors.grey.shade600,
                   minimumSize: Size(10.0, 59.0),
                   shape: RoundedRectangleBorder(

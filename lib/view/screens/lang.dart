@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../constants/layout_constant.dart';
-import '../../controller/provider/lang.dart';
 import '../widgets/custom_app_bar.dart';
 
 class Lang extends StatefulWidget {
@@ -31,14 +30,14 @@ class _LangState extends State<Lang> {
             title: Text('English'),
             onTap: () async {
               // setLang('en');
-              Provider.of<LanguageSet>(context, listen: false).setLang('en');
+              //  Provider.of<LanguageSet>(context, listen: false).setLang('en');
             },
           ),
           ListTile(
             title: Text('عربي'),
             onTap: () async {
               // setLang('ar');
-              Provider.of<LanguageSet>(context, listen: false).setLang('ar');
+              // Provider.of<LanguageSet>(context, listen: false).setLang('ar');
             },
           ),
         ],

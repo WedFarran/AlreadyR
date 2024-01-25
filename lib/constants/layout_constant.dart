@@ -1,14 +1,9 @@
 import 'package:flutter/material.dart';
 
+import 'colors.dart';
+
 //////////colors////////////////
-const Color white = Colors.white;
-Color grey = Colors.grey;
-Color yellowC = Color(0xFFF9AD30);
-Color red = Color(0xFFC63C3C);
-Color black = Colors.black;
-Color darkGrey = Colors.grey.shade800;
-Color green = Color(0xFF97CF6E);
-Color bGrey = Color(0xFFE5E5E5);
+
 ////////////////icons//////////////
 const Icon arrowBackIos = const Icon(
   Icons.arrow_back_ios,

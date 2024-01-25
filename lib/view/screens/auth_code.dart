@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:otp_text_field/otp_field.dart';
 import 'package:otp_text_field/style.dart';
 
+import '../../constants/colors.dart';
 import '../../constants/layout_constant.dart';
 import '../../controller/services/auth.dart';
 import '../widgets/auth_widget.dart';
@@ -32,7 +33,7 @@ class _AuthCState extends State<AuthC> {
     }
 
     return Scaffold(
-        backgroundColor: red,
+        backgroundColor: primaryColor,
         body: AuthWidget(
           imageAsset: 'assets/images/random/code.png',
           size: size,
@@ -104,7 +105,7 @@ class _AuthCState extends State<AuthC> {
                 },
                 text: // AppLocale.of(BuildContext, context)
                     "", // .getTranslations("verify"),
-                backColour: red,
+                backColour: primaryColor,
                 textColour: white,
               )
             ],

@@ -1,73 +1,55 @@
+import 'dart:async';
+
+import 'package:alreadyr/view/screens/loadingdata.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+import '../../constants/colors.dart';
 
-import '../../constants/layout_constant.dart';
-import '../../controller/provider/lang.dart';
-import '../widgets/button.dart';
-import 'loadingdata.dart';
-
-class Wellcome extends StatelessWidget {
+class Wellcome extends StatefulWidget {
   static const String id = 'wellcome_screen';
+
+  const Wellcome({super.key});
+
+  @override
+  State<Wellcome> createState() => _WellcomeState();
+}
+
+class _WellcomeState extends State<Wellcome> {
+  @override
+  void initState() {
+    Timer(const Duration(milliseconds: 2500), () {
+      /*var user = FirebaseAuth.instance.currentUser;
+      user == null
+          ? Navigator.of(context).pushNamed(AccountType.id)
+          : user.email!.contains('@wl.a.com')
+              ? Navigator.of(context).pushNamed(AdminWasteNavigationBar.id)
+              : Navigator.of(context).pushNamed(DriverWasteNavigationBar.id);*/
+      Navigator.of(context).pushNamed(LoadingScreen.id);
+    });
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
-        body: SafeArea(
-      child: Stack(
-        children: [
-          Container(
-            height: size.height,
-            width: size.width,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                fit: BoxFit.fill,
-                image: AssetImage('assets/images/home/logo.jpeg'),
-              ),
+      backgroundColor: primaryColor,
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            const Text("AlreadyR ",
+                style: TextStyle(color: white, fontSize: 50)),
+            SizedBox(
+              height: size.height * 0.07,
             ),
-          ),
-          Center(
-            child: Padding(
-              padding: const EdgeInsets.only(top: 400.0),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Button(
-                    text: ' English ',
-                    onpress: () async {
-                      Provider.of<LanguageSet>(context, listen: false)
-                          .setLang('en');
-                      Navigator.of(context).pushNamed(LoadingScreen.id);
-                      SharedPreferences sharedPreferences =
-                          await SharedPreferences.getInstance();
-                      sharedPreferences.setBool('first', false);
-                    },
-                    backColour: white,
-                    textColour: darkGrey,
-                  ),
-                  SizedBox(
-                    height: size.height * 0.03,
-                  ),
-                  Button(
-                    text: ' عربي ',
-                    onpress: () async {
-                      Provider.of<LanguageSet>(context, listen: false)
-                          .setLang('ar');
-                      SharedPreferences sharedPreferences =
-                          await SharedPreferences.getInstance();
-                      sharedPreferences.setBool('first', false);
-                      Navigator.of(context).pushNamed(LoadingScreen.id);
-                    },
-                    backColour: white,
-                    textColour: darkGrey,
-                  ),
-                ],
-              ),
-            ),
-          )
-        ],
+            CircularProgressIndicator(
+              backgroundColor: white,
+              color: black,
+            )
+          ],
+        ),
       ),
-    ));
+    );
   }
 }

@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../constants/colors.dart';
 import '../../constants/layout_constant.dart';
 import '../../controller/provider/cart_provider.dart';
 import '../../controller/provider/order_provider.dart';

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import '../../constants/colors.dart';
 import '../../constants/layout_constant.dart';
 import '../../controller/services/auth.dart';
 import '../widgets/auth_widget.dart';
@@ -24,7 +25,7 @@ class _AuthNState extends State<AuthN> {
     Size size = MediaQuery.of(context).size;
 
     return Scaffold(
-      backgroundColor: red,
+      backgroundColor: primaryColor,
       body: AuthWidget(
         size: size,
         imageAsset: 'assets/images/random/phone.png',
@@ -100,7 +101,7 @@ class _AuthNState extends State<AuthN> {
                     },
               text:
                   "", //AppLocale.of(BuildContext, context).getTranslations("save"),
-              backColour: red,
+              backColour: primaryColor,
               textColour: white,
             )
           ],
