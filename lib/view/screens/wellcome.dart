@@ -1,5 +1,7 @@
 import 'dart:async';
 
+import 'package:alreadyr/constants/layout_constant.dart';
+import 'package:alreadyr/constants/strings.dart';
 import 'package:alreadyr/view/screens/loadingdata.dart';
 import 'package:flutter/material.dart';
 import '../../constants/colors.dart';
@@ -38,10 +40,9 @@ class _WellcomeState extends State<Wellcome> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            const Text("AlreadyR ",
-                style: TextStyle(color: white, fontSize: 50)),
+            const Text(applicationName, style: splashScreenLogoStyle),
             SizedBox(
-              height: size.height * 0.07,
+              height: size.height * 0.05,
             ),
             CircularProgressIndicator(
               backgroundColor: white,

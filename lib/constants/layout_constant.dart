@@ -84,3 +84,6 @@ TextStyle selectedType = TextStyle(
 
 TextStyle unselectedType = TextStyle(
     color: Color(0xFF727272), fontSize: 15, fontWeight: FontWeight.w500);
+
+const TextStyle splashScreenLogoStyle =
+    TextStyle(color: white, fontSize: 50, fontWeight: FontWeight.w500);

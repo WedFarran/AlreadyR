@@ -2,7 +2,6 @@ import 'package:alreadyr/view/screens/home.dart';
 import 'package:flutter/material.dart';
 import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 import '../../constants/colors.dart';
-import '../../constants/layout_constant.dart';
 import 'offers.dart';
 import 'profile.dart';
 import 'my_order.dart';

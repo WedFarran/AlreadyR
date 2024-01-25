@@ -4,6 +4,7 @@ import 'package:alreadyr/controller/provider/offers_provider.dart';
 import 'package:alreadyr/controller/provider/order_provider.dart';
 import 'package:alreadyr/controller/provider/resturant_list_provider.dart';
 import 'package:alreadyr/controller/provider/user_provider.dart';
+import 'package:alreadyr/core/language.dart';
 import 'package:alreadyr/l10n/l10n.dart';
 import 'package:alreadyr/view/screens/wellcome.dart';
 //import 'package:firebase_core/firebase_core.dart';
@@ -11,8 +12,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:provider/provider.dart';
 import 'controller/services/category_items_list_provider.dart';
-import 'language.dart';
-import 'routes_providers.dart';
+import 'core/routes_providers.dart';
 
 void main() async {
   // WidgetsFlutterBinding.ensureInitialized();

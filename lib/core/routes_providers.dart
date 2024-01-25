@@ -1,30 +1,29 @@
+import 'package:alreadyr/controller/provider/menu_providor.dart';
+import 'package:alreadyr/controller/provider/offers_provider.dart';
+import 'package:alreadyr/controller/provider/order_provider.dart';
+import 'package:alreadyr/controller/provider/user_provider.dart';
+import 'package:alreadyr/view/screens/cart.dart';
+import 'package:alreadyr/view/screens/home.dart';
+import 'package:alreadyr/view/screens/lang.dart';
 import 'package:alreadyr/view/screens/loadingdata.dart';
+import 'package:alreadyr/view/screens/my_order.dart';
+import 'package:alreadyr/view/screens/offers.dart';
+import 'package:alreadyr/view/screens/order_history.dart';
+import 'package:alreadyr/view/screens/points.dart';
+import 'package:alreadyr/view/screens/resturant_menu.dart';
+import 'package:alreadyr/view/screens/resturants.dart';
+import 'package:alreadyr/view/screens/support.dart';
 import 'package:alreadyr/view/screens/wellcome.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'view/screens/my_order.dart';
-import 'view/screens/offers.dart';
-import 'view/screens/order_history.dart';
-import 'view/screens/points.dart';
-import 'view/screens/profile.dart';
-import 'view/screens/resturant_menu.dart';
-import 'view/screens/resturants.dart';
-import 'view/screens/support.dart';
-import 'view/screens/account.dart';
-import 'view/screens/auth_code.dart';
-import 'view/screens/auth_number.dart';
-import 'view/screens/cart.dart';
-import 'view/screens/home.dart';
-import 'view/screens/lang.dart';
-
-import 'controller/provider/cart_provider.dart';
-import 'controller/provider/menu_providor.dart';
-import 'controller/provider/offers_provider.dart';
-import 'controller/provider/order_provider.dart';
-import 'controller/provider/resturant_list_provider.dart';
-import 'controller/provider/user_provider.dart';
-import 'controller/services/category_items_list_provider.dart';
+import '../controller/provider/cart_provider.dart';
+import '../controller/provider/resturant_list_provider.dart';
+import '../controller/services/category_items_list_provider.dart';
+import '../view/screens/account.dart';
+import '../view/screens/auth_code.dart';
+import '../view/screens/auth_number.dart';
+import '../view/screens/profile.dart';
 
 Map<String, Widget Function(BuildContext)> aleadyRoutes = {
   Home.id: (context) => Home(),
