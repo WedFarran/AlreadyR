@@ -1,8 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:provider/provider.dart';
-
 import '../../model/resurants_model.dart';
-import '../resturant_list_provider.dart';
+import '../provider/resturant_list_provider.dart';
 
 class CategoryList {
   final int id;

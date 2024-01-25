@@ -1,4 +1,4 @@
-const String DB_URL = 'https://pager-3c967-default-rtdb.firebaseio.com/';
+const String DB_URL = 'https://alreadyr-1c28e-default-rtdb.firebaseio.com/';
 
 const String DB_RESTURANTS = 'resturants';
 

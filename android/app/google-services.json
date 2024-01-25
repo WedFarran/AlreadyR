@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "33506544133",
+    "project_id": "alreadyr-1c28e",
+    "storage_bucket": "alreadyr-1c28e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:33506544133:android:9849459ae2054943a76a6c",
+        "android_client_info": {
+          "package_name": "com.example.alreadyr"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhpL-_Zpwt-M7qvhMmwW9ZDa5pUdcyeJY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
